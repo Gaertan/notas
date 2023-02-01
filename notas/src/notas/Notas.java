@@ -10,21 +10,21 @@ public static void main(final String[] args) {//comienza la ejecucion // NOPMD b
 
 // Para pedir un dato numérico por teclado	
 final Scanner reader = new Scanner(System.in); // NOPMD by tzeen on 1/2/23 18:14
-String calificacion;
+String calificacionAlumno ;
 System.out.println("Introduzca el valor de una calificación: "); // NOPMD by tzeen on 1/2/23 18:14
-int nota = reader.nextInt(); // NOPMD by tzeen on 1/2/23 18:14
+int notaAlumno = reader.nextInt(); // NOPMD by tzeen on 1/2/23 18:14
 reader.close();
-if (nota >= 0 && nota< 5) {	calificacion = "Suspenso";}
+if (notaAlumno >= 0 && notaAlumno< 5) {	calificacionAlumno  = "Suspenso";}
 
-else if (nota >= 5 && nota< 7){	calificacion = "Aprobado";}
+else if (notaAlumno >= 5 && notaAlumno< 7){	calificacionAlumno  = "Aprobado";}
 
-else if (nota >= 7 && nota <9){	calificacion = "Notable";}
+else if (notaAlumno >= 7 && notaAlumno <9){	calificacionAlumno  = "Notable";}
 
-else if (nota >= 9 && nota<= 10){	calificacion = "Sobresaliente";}
+else if (notaAlumno >= 9 && notaAlumno<= 10){	calificacionAlumno  = "Sobresaliente";}
 
-else {calificacion = "El valor de la calificación introducida no es correcta";}
+else {calificacionAlumno  = "El valor de la calificación introducida no es correcta";}
 
-System.out.println(calificacion); // NOPMD by tzeen on 1/2/23 18:15
+System.out.println(calificacionAlumno ); // NOPMD by tzeen on 1/2/23 18:15
 
 }
 }
