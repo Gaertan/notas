@@ -1,10 +1,16 @@
 package notas;
-
+/**
+* Clase Califica
+* muestra por pantalla la calificacion de un alumno
+* @author Andres Garcia
+* @version 0.7, 20023/02/01
+*/
 public class Califica {
 
-	/**aqui el comentario, el código dicta la calificacion dependiendo del parametro de la nota del alumno
-	 * @param num_nota
-	 */
+	/**metodo califica, el código dicta la calificacion dependiendo del parametro de la nota del alumno
+	 * @param num_nota nota del alumno que sera pasado al metodo
+	* @see notas.Notas#main Código al que se hace referencia
+	*/
 	public static void califica(int num_nota) {
 		String calificacionAlumno;
 		if (num_nota >= 0 && num_nota< 5) {	calificacionAlumno  = "Suspenso";}
